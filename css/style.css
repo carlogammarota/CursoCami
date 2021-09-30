@@ -1,0 +1,64 @@
+h1 {
+    color:red;
+}
+h2 {
+    color:blue;
+}
+
+p {
+    color:orange;
+    font-size: 20px;
+}
+
+/* el hover significa que va a surgir efecto cuando el mouse este por arriba */
+p:hover {
+    color:yellow;
+}
+
+.textoGrande {
+    font-size: 50px;
+}
+
+.naranja {
+    color: orange;
+}
+
+#soyUnico {
+    font-size: 100px;   
+}
+
+.boton{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: green 5px solid;
+}
+
+.boton:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+
+.ejemplo{
+    background-color: purple;
+    font-size: 15px;
+}
+
+.general{
+
+}
+
+.div{
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    transition: all 4s;
+}
+
+.div:hover{
+    width: 500px;
+    height: 200px;
+    background-color: red;
+}

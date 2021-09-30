@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Para importar css se utiliza una etiqueta llamada link con la url en href -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Para importar un .JS se utliza la etiqueta llamada script con la url en src  -->
+    <script src="javascript/main.js"></script>
+
+    <!-- importamos tailwindcss -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- una etiqueta h1 con el id soyUnico -->
+    <h1 id="soyUnico">Hola</h1>
+
+    <!-- una etiqueta h1 con una clase llamada textoGrande y naranja -->
+    <h2 class="textoGrande naranja">Hola 2</h2>
+
+    <!-- una etiqueta p con una clase llamada textoGrande -->
+    <p class="textoGrande bg-red-700">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Deleniti obcaecati minus ipsa placeat officiis, dignissimos quod possimus beatae ducimus autem culpa sit saepe minima 
+        repellat iusto cupiditate hic doloremque. Accusamus!
+    </p>
+
+    <div class="div">
+        SOY UN DIV
+    </div>
+
+    </br>
+
+    <input type="text" id="cajaTexto">
+    <!-- BOTON -->
+    <button class="boton" id="soyBoton" onclick="dispararAlerta()">Soy un Boton Alerta</button>
+
+    <button onclick="ejemplo(200, 500)" class="ejemplo general">ejemplo</button>
+
+
+</body>
+</html>
