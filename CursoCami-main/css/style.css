@@ -62,3 +62,24 @@ p:hover {
     height: 200px;
     background-color: red;
 }
+
+.sumar{
+    background-color: aqua;
+}
+
+.restar{
+    background-color: cyan;
+}
+
+.multiplicar{
+    background-color: chocolate;
+}
+
+.division{
+    background-color: coral;
+}
+
+.operacion{
+    font-size: 20px;
+    border: 2px red solid;
+}

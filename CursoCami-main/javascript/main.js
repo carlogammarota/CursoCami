@@ -94,5 +94,32 @@ function dispararAlerta(){
 //          .borde de 2px color rojo solido
 
 
+function suma( a, b){
+    console.log('El resultado es: ', a + b);
+}
+
+suma (100, 200);
 
 
+
+function resta( c, d){
+    console.log('El resultado es: ', c - d)
+}
+
+resta (400, 150);
+
+
+
+function multiplicar( e, f){
+    console.log('El resultado es: ', e * f)
+}
+
+multiplicar (50, 300);
+
+
+
+function division( g, h){
+    console.log ('El resultado es: ', g / h)
+}
+
+division (980, 70);
