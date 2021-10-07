@@ -41,11 +41,14 @@
 
     <button onclick="ejemplo(200, 500)" class="ejemplo general">ejemplo</button>
 
-    
-    <button onclick="suma(100, 200)" class="operacion sumar">suma</button>
-    <button onclick="resta(400, 150)" class="operacion restar">resta</button>
-    <button onclick="multiplicar(50, 300)" class="operacion multiplicar">multiplicar</button>
-    <button onclick="division(980, 70)" class="operacion division">division</button>
+    <h1>El resultado es: <span id="resultado">0</span></h1>
+
+    <input type='number' id='numero1' class="calculos" onchange="guardarDatos()"/>
+    <input type='number' id='numero2' class="calculos" onchange="guardarDatos()"/>
+    <button onclick="suma()" class="operacion sumar">suma</button>
+    <button onclick="resta()" class="operacion restar">resta</button>
+    <button onclick="multiplicar()" class="operacion multiplicar">multiplicar</button>
+    <button onclick="division()" class="operacion division">division</button>
 
 
 </body>

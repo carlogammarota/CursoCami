@@ -93,33 +93,73 @@ function dispararAlerta(){
 //          .un tamaño de letra de 20px
 //          .borde de 2px color rojo solido
 
+let numero1= 0;
+let numero2= 0;
 
-function suma( a, b){
-    console.log('El resultado es: ', a + b);
+function guardarDatos(){
+   numero1= document.getElementById('numero1').value
+   numero2= document.getElementById('numero2').value
 }
 
-suma (100, 200);
+function suma(){
+    guardarDatos()
+   
+    if(numero1 && numero2){
+        let total= parseFloat(numero1) + parseFloat(numero2);
+        console.log('El resultado es: ', total)
+        document.getElementById('resultado').innerHTML = total;
+    } else {
+        alert('No has ingresado ningun numero')
+    }
+
+} 
+
+//suma (100, 200);
 
 
 
-function resta( c, d){
-    console.log('El resultado es: ', c - d)
+function resta(){
+    guardarDatos()
+
+    if(numero1 && numero2){
+        let total= parseFloat(numero1) - parseFloat(numero2);
+        console.log('El resultado es: ', total)
+        document.getElementById('resultado').innerHTML = total;
+    } else {
+        alert('No has ingresado ningun numero')
+    }
 }
 
-resta (400, 150);
+//resta (400, 150);
 
 
 
 function multiplicar( e, f){
-    console.log('El resultado es: ', e * f)
+    guardarDatos()
+
+     if(numero1 && numero2){
+        let total= parseFloat(numero1) * parseFloat(numero2);
+        console.log('El resultado es: ', total)
+        document.getElementById('resultado').innerHTML = total;
+    } else {
+        alert('No has ingresado ningun numero')
+    }
 }
 
-multiplicar (50, 300);
+//multiplicar (50, 300);
 
 
 
 function division( g, h){
-    console.log ('El resultado es: ', g / h)
+    guardarDatos()
+
+     if(numero1 && numero2){
+        let total= parseFloat(numero1) / parseFloat(numero2);
+        console.log('El resultado es: ', total)
+        document.getElementById('resultado').innerHTML = total;
+    } else {
+        alert('No has ingresado ningun numero')
+    }
 }
 
-division (980, 70);
+//division (980, 70);
