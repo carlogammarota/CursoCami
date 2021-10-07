@@ -96,6 +96,21 @@ function dispararAlerta(){
 let numero1= 0;
 let numero2= 0;
 
+//aca iria la funcion que determina que calculo quiere hacer el individuo
+function determinar(){
+
+    //guardamos el select en una variable llamada operacion
+    let operacion = document.getElementById("tipoDeCalculo").value;
+
+    //imprimimos la variable operacion para ver que esta guardando
+    console.log(operacion)
+
+    //si se cumple la condicion tiene que llamar a su respectiva funcion ya creada
+    //ejemplo
+    // if(operacion == "suma"){ llamar a la funcion que corresponda }
+
+}
+
 function guardarDatos(){
    numero1= document.getElementById('numero1').value
    numero2= document.getElementById('numero2').value

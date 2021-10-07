@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="../javascript/main.js"></script>
+    <title>Calculadora Simple</title>
+
+    <style>
+        .input {
+            transition: border 0.2s ease-in-out;
+            min-width: 280px;
+            padding: 10px;
+        }
+    
+        .input:focus+.label,
+        .input:active+.label,
+        .input.filled+.label {
+            font-size: .75rem;
+            transition: all 0.2s ease-out;
+            top: -0.1rem;
+            color: #667eea;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div class="shadow-xl p-10 bg-white max-w-xl rounded m-auto d-block mt-4">
+        <h1 class="text-4xl font-black mb-4">Calculadora</h1>
+        <div class="mb-4 relative">
+            <input placeholder="Ingrese un numero" class="input border border-gray-400 appearance-none rounded w-full px-3 py-3 pt-5 pb-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600" id="numero1" type="number" autofocus>
+            <!-- <label for="email" class="label absolute mb-0 -mt-2 pt-4 pl-3 leading-tighter text-gray-400 text-base mt-2 cursor-text">Numero 1</label> -->
+        </div>
+        <div class="mb-4 relative">
+            <input placeholder="Ingrese otro numero" class="input border border-gray-400 appearance-none rounded w-full px-3 py-3 pt-5 pb-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600" id="numero2" type="number" autofocus>
+            <!-- <label for="password" class="label absolute mb-0 -mt-2 pt-4 pl-3 leading-tighter text-gray-400 text-base mt-2 cursor-text">Numero 2</label> -->
+        </div>
+        
+        <select name="calculo" id="tipoDeCalculo" class="mb-4">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicacion</option>
+            <option value="division">Division</option>
+        </select>
+        
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-4">
+                <button class="bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded" onclick="determinar()">Submit</button>
+            </div>
+            <div class="col-span-8">
+                <h1 class="py-2 text-2xl text-right">El resultado es: <span>0</span></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
