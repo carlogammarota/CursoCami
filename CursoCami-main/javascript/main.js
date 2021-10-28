@@ -96,24 +96,36 @@ function dispararAlerta(){
 let numero1= 0;
 let numero2= 0;
 
+//guardamos el select en una variable llamada operacion
+let operacion = document.getElementById("tipoDeCalculo").value;
+
+
+
 //aca iria la funcion que determina que calculo quiere hacer el individuo
-function determinar(){
-
-    //guardamos el select en una variable llamada operacion
-    let operacion = document.getElementById("tipoDeCalculo").value;
-
+function determinar(suma, resta, multiplicar, division){
+    
+    
+    if (operacion == suma) {
+        return function suma 
+    } else if (operacion == resta) {
+        return function resta
+    } else if (operacion == multiplicacion) {
+        return function multiplicar 
+    } else {
+        return function division
+    }
+    
+}
     //imprimimos la variable operacion para ver que esta guardando
     console.log(operacion)
-
+    
     //si se cumple la condicion tiene que llamar a su respectiva funcion ya creada
     //ejemplo
     // if(operacion == "suma"){ llamar a la funcion que corresponda }
-
-}
-
+    
 function guardarDatos(){
-   numero1= document.getElementById('numero1').value
-   numero2= document.getElementById('numero2').value
+       numero1= document.getElementById('numero1').value
+       numero2= document.getElementById('numero2').value
 }
 
 function suma(){
@@ -126,7 +138,7 @@ function suma(){
     } else {
         alert('No has ingresado ningun numero')
     }
-
+    
 } 
 
 //suma (100, 200);
@@ -135,7 +147,7 @@ function suma(){
 
 function resta(){
     guardarDatos()
-
+    
     if(numero1 && numero2){
         let total= parseFloat(numero1) - parseFloat(numero2);
         console.log('El resultado es: ', total)
@@ -151,8 +163,8 @@ function resta(){
 
 function multiplicar( e, f){
     guardarDatos()
-
-     if(numero1 && numero2){
+    
+    if(numero1 && numero2){
         let total= parseFloat(numero1) * parseFloat(numero2);
         console.log('El resultado es: ', total)
         document.getElementById('resultado').innerHTML = total;
