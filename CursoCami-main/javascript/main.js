@@ -97,25 +97,11 @@ let numero1= 0;
 let numero2= 0;
 
 //guardamos el select en una variable llamada operacion
-let operacion = document.getElementById("tipoDeCalculo").value;
+let operacion = null;
 
 
 
-//aca iria la funcion que determina que calculo quiere hacer el individuo
-function determinar(suma, resta, multiplicar, division){
-    
-    
-    if (operacion == suma) {
-        return function suma 
-    } else if (operacion == resta) {
-        return function resta
-    } else if (operacion == multiplicacion) {
-        return function multiplicar 
-    } else {
-        return function division
-    }
-    
-}
+
     //imprimimos la variable operacion para ver que esta guardando
     console.log(operacion)
     
@@ -126,6 +112,8 @@ function determinar(suma, resta, multiplicar, division){
 function guardarDatos(){
        numero1= document.getElementById('numero1').value
        numero2= document.getElementById('numero2').value
+
+       operacion = document.getElementById("tipoDeCalculo").value;
 }
 
 function suma(){
@@ -187,6 +175,22 @@ function division( g, h){
     } else {
         alert('No has ingresado ningun numero')
     }
+}
+
+
+//aca iria la funcion que determina que calculo quiere hacer el individuo
+function determinar(){
+    guardarDatos()
+    if (operacion == "suma") {
+        suma(numero1, numero2) 
+    } else if (operacion == "resta") {
+        resta(numero1, numero2)
+    } else if (operacion == "multiplicacion") {
+        multiplicar (numero1, numero2)
+    } else {
+        division(numero1, numero2)
+    }
+    
 }
 
 //division (980, 70);
